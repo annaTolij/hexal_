@@ -1,0 +1,520 @@
+@font-face {
+	font-family: Lato-Bold;
+	src: url('../assets/Fonts/\﻿Lato-Bold.ttf');
+}
+
+@font-face {
+	font-family: MyriadPro-Regular;
+	src: url('../assets/Fonts/MyriadPro-Regular.otf');
+}
+
+@font-face {
+	font-family: MavenProRegular;
+	src: url('../assets/Fonts/MavenPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: Lato-Regular;
+	src: url('../assets/Fonts/\﻿Lato-Regular.ttf');
+}
+
+@font-face {
+	font-family: Lato-Black;
+	src: url('../assets/Fonts/Lato-Black.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 63px;
+    background-color: #323232;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 26px 45.5px 0 45.5px;
+    border-color: #323232 transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    top: 63px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.row {
+    height: 55px;
+}
+
+nav {
+    padding-top: 10px;
+    height: 63px;
+}
+
+.row li {
+    list-style-type: none;
+}
+
+.row li:not(.logo-li) {
+    width: 78px;
+    height: 29px;   
+}
+
+.row li a:hover {
+    color: #2eac93;  
+}
+
+.row li a {
+    text-decoration: none;
+    font-size: 7.21379pt;
+    font-family: Lato-Bold, MyriadPro-Regular;
+    color: rgba(255, 255, 255, 255);
+    text-align: justify;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo {
+    margin-right: 2px; 
+}
+
+.portfolio {
+    margin-left: 5px;
+    position: relative;
+}
+
+.portfolio::after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #484c5f;
+    border-radius: 100%;
+    position: absolute;
+    top: 4px;
+    left: 66.5px;
+}
+
+.about {
+    margin-left: 7.5px;
+}
+
+.blog {
+    margin-left: 36.5px;
+    position: relative;
+}
+
+.blog::after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #484c5f;
+    border-radius: 100%;
+    position: absolute;
+    top: 4px;
+    left: 38px;
+}
+
+.getInTouch {
+    margin-left: 8px;   
+}
+
+.lines {
+    position: absolute;
+    bottom: -12px;
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 40.196%;
+    height: 1px;
+    background-color: #e4e9eb;
+}
+
+
+.line-mr {
+    margin-right: 142px;
+}
+
+.hexagon{
+    width: 178.6px;
+    height: 212px;
+    margin: 11px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.hex-layer{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.hex-layer-1{
+    width: 100%;
+    height: 100%;
+    background: #cccc;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: visible;
+}
+
+.hex-layer-img-1 {
+    background-image: url(../assets/img/Layer\ 33@1X.png);
+    background-repeat: no-repeat;
+    background-position: 50%;  
+}
+
+.hex-layer-img-2 {
+    background-image: url(../assets/img/Layer\ 31@1X.png);
+    background-repeat: no-repeat;
+    background-position: 50%;  
+}
+
+.hex-layer-img-3 {
+    background-image: url(../assets/img/Layer\ 34@1X.png);
+    background-repeat: no-repeat;
+    background-position: 50%;  
+}
+
+.hex-layer-img-4 {
+    background-image: url(../assets/img/Layer\ 35@1X.png);
+    background-repeat: no-repeat;
+    background-position: 50%;  
+}
+
+.block-portfolio {
+    height: 721px;
+    background-color:#fff;
+}
+
+.block-about{
+    display: grid;
+    grid-template-columns: auto 200px 580px auto;
+    grid-template-rows: 68px 67px 115px 24px 67px;
+    background-color: #2eb398;
+}
+
+.name-cell {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: start;
+    align-self: start;
+}
+
+.name-cell h1 {
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 22.5pt;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    margin: 0;
+    font-weight: normal;
+    margin-top: -8px;
+    margin-left: -2px;
+}
+
+.name-cell h3 {
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 17.5px;
+    color: rgba(32, 129, 109, 255);
+    text-align: justify;
+    margin: 0;
+    font-weight: normal;
+    margin-top: -1px;
+    margin-left: -1px;
+    letter-spacing: -0.1px;
+}
+
+.text-cell {
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-self: start;
+    align-self: start;
+}
+
+.text-cell p {
+    margin: 0;
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 8.4pt;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    font-weight: bold;
+    word-spacing: -1px;
+    letter-spacing: 0.4px;
+    line-height: 21.999999047px;
+    margin-top: -8px;
+}
+
+.img-cell {
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    justify-self: start;
+    align-self: center;
+}
+
+.hex-layer-img-about {
+    background-image: url(../assets/img/Image@1X.png);
+    background-repeat: no-repeat;
+    background-position: 49% 49%;  
+}
+
+.img-cell .hexagon {
+    margin: 0;
+}
+
+.messengers-cell {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    justify-self: end;
+}
+
+.line-right {
+    position: absolute;
+    background-color: #219d84;
+    width: 1px;
+    right: -21px;
+    top: -122px;
+    height: 316px;
+}
+
+.line-left {
+    position: absolute;
+    width: 1px;
+    height: 316px;
+    background-color: #219d84;
+    top: -52px;
+    left: -21px;
+}
+
+.facebook {
+    background-image: url("./assets/img/Facebook@1X.png");
+}
+
+.block-contact {
+    display: grid;
+    grid-template-columns: auto 600px 180px auto;
+    grid-template-rows: 67px 67px 162px 268px;
+    background-color: #323232;
+}
+
+.title-cell {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: start;
+    align-self: start;
+}
+
+.title-cell h2 {
+    margin: 0;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 22.7pt;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+    margin-top: -8px;
+    font-weight: normal;
+}
+
+.title-cell h3 {
+    margin: -1px 0px 0 2px;
+    font-family: MavenProRegular;
+    font-size: 13pt;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+    word-spacing: 0.2px;
+    font-weight: normal;
+    letter-spacing: 0.2px;   
+}
+
+.input-cell {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    align-self: start;
+    padding-right: 20px;
+}
+
+.input {
+    margin-bottom: 16.5px;
+    border: 0;
+    height: 37.5px;
+    width: 100%;
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 9pt;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+    background-color: #454545;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    padding: 0;
+}
+
+::-webkit-input-placeholder {text-indent: 15px; color: rgba(190, 190, 190, 255);}
+::-moz-placeholder          {text-indent: 15px; color: rgba(190, 190, 190, 255);}
+:-moz-placeholder           {text-indent: 15px; color: rgba(190, 190, 190, 255);}
+:-ms-input-placeholder      {text-indent: 15px; color: rgba(190, 190, 190, 255);}
+
+.text-contact-cell {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-self: start;
+    align-self: start;
+}
+
+.text-contact-cell p {
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 9pt;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+    margin: 0;
+    margin-top: -7px;
+    line-height: 22px;
+}
+
+.contact-data-cell {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    justify-self: start;
+    align-self: start;
+}
+
+.input-massage-cell {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    justify-self: end;
+    align-self: start;
+    padding-right: 20px;
+}
+
+.msg {
+    height: 138px;
+    width: 576px;
+    border: 0;
+    background-color: #454545;
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 9pt;
+    padding-top: 10px;
+    font-weight: bold;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+    margin-bottom: 11px;
+}
+
+.msg::-webkit-input-placeholder {text-indent: 11px; color: rgba(190, 190, 190, 255);}
+.msg::-moz-placeholder          {text-indent: 11px; color: rgba(190, 190, 190, 255);}
+.msg:-moz-placeholder           {text-indent: 11px; color: rgba(190, 190, 190, 255);}
+.msg:-ms-input-placeholder      {text-indent: 11px; color: rgba(190, 190, 190, 255);}
+
+
+.rowButton {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rowButton button {
+    background-color: #2eb398;
+    width: 90px;
+    height: 37px;
+    text-align: center;
+    border: none;
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 8.6pt;
+    color: rgba(215, 252, 245, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.rowButton button:hover {
+    background-color: #67ffe0;
+    cursor: pointer;
+}
+
+.rowPhone {
+    margin-top: -4px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.location-img {
+    margin-left: 2px;
+}
+
+.msg-a {
+    margin-left: 6px;
+}
+
+.rowPhone a {
+    text-decoration: none;
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 8.62pt;
+    color: rgba(190, 190, 190, 255);
+    font-weight: bold;
+    margin-left: 12px;
+    word-spacing: 2px;
+}
+
+.rowPhone a:hover {
+    color: #2eac93;  
+}
+
+footer {
+    background-color: #222222;
+    height: 43px;
+}
+
+.footer {
+    padding: 14px 0px 0px 3.7%;
+    
+}
+
+.footer p{
+    margin: 0;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 8.65655pt;
+    color: rgba(69, 69, 69, 255);
+    text-align: justify;
+    letter-spacing: -0.2px;
+}
+
